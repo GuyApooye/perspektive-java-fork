@@ -1,10 +1,11 @@
 {
-  "perspektive.returnToFirstPerson": "Always return to first person",
-  "perspektive.distance": "Distance to camera",
-  "modmenu.descriptionTranslation.perspektive": "A straightforward freelook mod",
-  "perspektive.blockInventoryScrolling": "Block inventory scrolling while in freelook",
-  "perspektive.scrollingEnabled": "Scroll to change the camera distance",
-  "perspektive.tooltips.scrollingEnabled": "Only applies if scrolling to change the camera distance is enabled",
-  "perspektive.cameraDistanceInThirdPerson": "Use camera distance in third person",
-  "perspektive.tooltips.cameraDistanceInThirdPerson": "Also uses the specified camera distance in 'normal' third person view and enables scrolling aswell"
+  "text.autoconfig.perspektive.option.shouldReturnToFirstPerson": "Always return to first person",
+  "text.autoconfig.perspektive.option.cameraDistance": "Distance to camera",
+  "modmenu.descriptionTranslation.perspektive": "A straightforward freelook mod. NOW Kotlin FREE!",
+  "text.autoconfig.perspektive.option.blockInventoryScrolling": "Block inventory scrolling while in freelook",
+  "text.autoconfig.perspektive.option.scrollingEnabled": "Scroll to change the camera distance",
+  "text.autoconfig.perspektive.option.tooltips.scrollingEnabled": "Only applies if scrolling to change the camera distance is enabled",
+  "text.autoconfig.perspektive.option.cameraDistanceInThirdPerson": "Use camera distance in third person",
+  "text.autoconfig.perspektive.option.cameraDistanceAlsoIn3rdPerson": "Also uses the specified camera distance in 'normal' third person view and enables scrolling aswell",
+  "text.autoconfig.perspektive.title": "Perspektive"
 }

@@ -1,5 +1,3 @@
-rootProject.name = "perspektive"
-
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -7,3 +5,4 @@ pluginManagement {
         maven("https://maven.quiltmc.org/repository/release/")
     }
 }
+rootProject.name = "perspektive"

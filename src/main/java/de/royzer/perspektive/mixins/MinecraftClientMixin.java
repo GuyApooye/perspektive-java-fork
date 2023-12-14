@@ -1,6 +1,6 @@
 package de.royzer.perspektive.mixins;
 
-import de.royzer.perspektive.Perspektive;
+import de.royzer.perspektive.imported.Perspektive;
 import net.minecraft.client.CameraType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
@@ -18,7 +18,7 @@ public class MinecraftClientMixin {
         )
     )
     public void blockPerspectiveChange(Options instance, CameraType perspective) {
-        if (!Perspektive.INSTANCE.getFreeLookToggled()) {
+        if (!Perspektive.getFreeLookToggled()) {
             Minecraft.getInstance().options.setCameraType(Minecraft.getInstance().options.getCameraType().cycle());
         }
     }

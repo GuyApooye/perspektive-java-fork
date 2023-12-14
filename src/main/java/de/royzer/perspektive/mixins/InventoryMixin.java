@@ -1,6 +1,6 @@
 package de.royzer.perspektive.mixins;
 
-import de.royzer.perspektive.mixinskt.InventoryMixinKt;
+import de.royzer.perspektive.imported.mixinsj.InventoryMixinJ;
 import net.minecraft.world.entity.player.Inventory;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,6 +15,6 @@ public class InventoryMixin {
             cancellable = true
     )
     public void onScroll(double d, CallbackInfo ci) {
-        InventoryMixinKt.onScroll(d, ci);
+        InventoryMixinJ.onScroll(d, ci);
     }
 }

@@ -1,6 +1,6 @@
 package de.royzer.perspektive.mixins;
 
-import de.royzer.perspektive.mixinskt.EntityMixinKt;
+import de.royzer.perspektive.imported.mixinsj.EntityMixinJ;
 import net.minecraft.world.entity.Entity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -17,6 +17,6 @@ public class EntityMixin {
         cancellable = true
     )
     private void changeLookDirection(double cursorDeltaX, double cursorDeltaY, CallbackInfo ci) {
-        EntityMixinKt.blockPlayerRotation(cursorDeltaX, cursorDeltaY, ci);
+        EntityMixinJ.blockPlayerRotation(cursorDeltaX, cursorDeltaY, ci);
     }
 }

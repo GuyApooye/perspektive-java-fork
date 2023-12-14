@@ -1,7 +1,6 @@
 package de.royzer.perspektive.mixins;
 
-import de.royzer.perspektive.Perspektive;
-import de.royzer.perspektive.settings.PerspektiveSettings;
+import de.royzer.perspektive.imported.Perspektive;
 import net.minecraft.client.Camera;
 import net.minecraft.client.CameraType;
 import net.minecraft.client.Minecraft;
@@ -12,6 +11,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import static de.royzer.perspektive.imported.Perspektive.config;
 
 @Mixin(Camera.class)
 public abstract class CameraMixin {
@@ -39,13 +40,13 @@ public abstract class CameraMixin {
             )
     )
     public void update(BlockGetter area, Entity focusedEntity, boolean thirdPerson, boolean inverseView, float tickDelta, CallbackInfo ci) {
-        if (Perspektive.INSTANCE.getFreeLookEnabled()) {
+        if (Perspektive.getFreeLookEnabled()) {
             if (firstPress) {
-                Perspektive.setPitch(focusedEntity.getXRot());
-                Perspektive.setYaw(focusedEntity.getYRot());
+                Perspektive.pitch=focusedEntity.getXRot();
+                Perspektive.yaw=focusedEntity.getYRot();
             }
             firstPress = false;
-            this.setRotation(Perspektive.getYaw(), Perspektive.getPitch());
+            this.setRotation(Perspektive.yaw, Perspektive.pitch);
         } else {
             firstPress = true;
         }
@@ -56,10 +57,10 @@ public abstract class CameraMixin {
             at = @At("TAIL")
     )
     public void setDistance(BlockGetter area, Entity focusedEntity, boolean thirdPerson, boolean inverseView, float tickDelta, CallbackInfo ci) {
-        if (Perspektive.INSTANCE.getFreeLookEnabled() ||
-                (PerspektiveSettings.INSTANCE.getCameraDistanceAlsoIn3rdPerson()
+        if (Perspektive.getFreeLookEnabled() ||
+                (config.cameraDistanceAlsoIn3rdPerson
                         && Minecraft.getInstance().options.getCameraType() != CameraType.FIRST_PERSON)) {
-            this.move(-this.getMaxZoom(PerspektiveSettings.INSTANCE.getCameraDistance()), 0.0, 0.0);
+            this.move(-this.getMaxZoom(config.cameraDistance), 0.0, 0.0);
         }
     }
 }

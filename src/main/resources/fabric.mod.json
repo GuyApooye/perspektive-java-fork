@@ -1,34 +1,35 @@
 {
   "entrypoints": {
     "client": [
-      "de.royzer.perspektive.MainKt::initClient"
+      "de.royzer.perspektive.imported.Main::onInitialize"
     ],
     "modmenu": [
-      "de.royzer.perspektive.settings.ModMenuApiImpl"
+      "de.royzer.perspektive.imported.settings.ModMenuApiImpl"
     ]
   },
   "id": "perspektive",
-  "version": "${version}",
+  "version": "1.3.4",
   "schemaVersion": 1,
   "environment": "client",
   "authors": [
-    "r0yzer"
+    "r0yzer",
+    "GuyApooye"
   ],
   "depends": {
     "minecraft": "1.20.x",
-    "fabric-language-kotlin": "*",
     "fabricloader": ">=0.8.7",
     "fabric": "*",
-    "fabric-key-binding-api-v1": "*"
+    "fabric-key-binding-api-v1": "*",
+    "cloth-config": "*"
   },
   "suggests": {
     "modmenu": "*"
   },
-  "description": "A straightforward freelook mod",
+  "description": "A straightforward freelook mod. NOW Kotlin FREE!",
   "contact": {
-    "sources": "https://github.com/r0yzer/perspektive",
-    "issues": "https://github.com/r0yzer/perspektive/issues",
-    "homepage": "https://modrinth.com/mod/perspektive"
+    "sources": "https://github.com/GuyApooye/perspektive-java-fork",
+    "issues": "https://github.com/GuyApooye/perspektive-java-fork/issues",
+    "homepage": "https://modrinth.com/mod/perspektive-java-fork"
   },
   "mixins": [
     "perspektive.mixins.json"

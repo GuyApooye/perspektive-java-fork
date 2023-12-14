@@ -1,10 +1,11 @@
 {
-  "perspektive.returnToFirstPerson": "Immer in First-Person zurückkehren",
-  "perspektive.distance": "Distanz zur Kamera",
-  "modmenu.descriptionTranslation.perspektive": "Ein einfacher Freelook-Mod",
-  "perspektive.blockInventoryScrolling": "Inventar-Scrolling verhinden in Freelook",
-  "perspektive.scrollingEnabled": "Mausrad-Scrolling während in Freelook",
-  "perspektive.tooltips.scrollingEnabled": "Wirkt nur wenn Mausrad-Scrolling in Freelook an ist",
-  "perspektive.cameraDistanceInThirdPerson": "In thirdperson Kameradistanz nutzen",
-  "perspektive.tooltips.cameraDistanceInThirdPerson": "Ermöglicht auch in der 'normalen' thirdperson die angegebene Kameradistanz nutzen und die Kameradistanz per Mausrad zu ändern"
+  "text.autoconfig.perspektive.option.returnToFirstPerson": "Immer in First-Person zurückkehren",
+  "text.autoconfig.perspektive.option.distance": "Distanz zur Kamera",
+  "modmenu.descriptionTranslation.perspektive": "Ein einfacher Freelook-Mod. NOW Kotlin FREE!",
+  "text.autoconfig.perspektive.option.blockInventoryScrolling": "Inventar-Scrolling verhinden in Freelook",
+  "text.autoconfig.perspektive.option.scrollingEnabled": "Mausrad-Scrolling während in Freelook",
+  "text.autoconfig.perspektive.option.tooltips.scrollingEnabled": "Wirkt nur wenn Mausrad-Scrolling in Freelook an ist",
+  "text.autoconfig.perspektive.option.cameraDistanceInThirdPerson": "In thirdperson Kameradistanz nutzen",
+  "text.autoconfig.perspektive.option.tooltips.cameraDistanceInThirdPerson": "Ermöglicht auch in der 'normalen' thirdperson die angegebene Kameradistanz nutzen und die Kameradistanz per Mausrad zu ändern",
+  "text.autoconfig.perspektive.title": "Perspektive"
 }
